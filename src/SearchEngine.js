@@ -13,9 +13,17 @@ export default function SearchEngine() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="search" onChange={updateCity} />
-      <input type="submit" value="Submit" />
-    </form>
+    <div>
+      <div className="today-icon">today icon</div>
+      <div className="current-temp">
+        18 <span className="celcus"></span>°C |
+        <span className="fahrenheit">°F</span>
+      </div>
+
+      <form onSubmit={handleSubmit}>
+        <input type="search" onChange={updateCity} />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   );
 }
