@@ -4,7 +4,6 @@ import SearchEngine from "./SearchEngine";
 export default function App() {
   return (
     <div className="App">
-      Weather App
       <SearchEngine />
       <footer>
         This project was coded by{" "}

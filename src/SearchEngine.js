@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [city, setCity] = useState(" ");
@@ -13,7 +14,8 @@ export default function SearchEngine() {
   }
 
   return (
-    <div>
+    <div className="search-engine">
+      <h1>Weather App</h1>
       <div className="today-icon">today icon</div>
       <div className="current-temp">
         18 <span className="celcus"></span>°C |
