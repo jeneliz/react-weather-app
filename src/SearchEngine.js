@@ -16,6 +16,7 @@ export default function SearchEngine() {
   return (
     <div className="search-engine">
       <h1>Weather App</h1>
+      <button className="btn btn-primary">hello</button>
       <div className="today-icon">today icon</div>
       <div className="current-temp">
         18 <span className="celcus"></span>°C |
