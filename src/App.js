@@ -12,6 +12,7 @@ export default function App() {
             rel="noreferrer"
             href="https://coding-on-coffee.netlify.app/"
             target="_blank"
+            className="my-portfolio-link"
           >
             Jennifer Brown
           </a>{" "}
@@ -20,6 +21,7 @@ export default function App() {
             rel="noreferrer"
             href="https://github.com/jeneliz/react-weather-app"
             target="_blank"
+            className="my-github-link"
           >
             opened sourced
           </a>

@@ -1,0 +1,13 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.App footer {
+  font-size: 15px;
+  margin: 0;
+}
+.my-portfolio-link,
+.my-github-link {
+  color: #2fd2f2;
+}
