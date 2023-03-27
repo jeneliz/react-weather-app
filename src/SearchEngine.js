@@ -1,8 +1,17 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
+  let [temperature, setTemperature] = useState(null);
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
   let [city, setCity] = useState(" ");
+  let apiKey = `d1oa3b4ebbef08c0aata4d20f47b2482`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
 
   function handleSubmit(event) {
     event.preventDefault();
