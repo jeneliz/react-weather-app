@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./SearchEngine.css";
 
@@ -9,7 +10,7 @@ export default function SearchEngine(props) {
       ready: true,
       temperature: response.data.temperature.current,
       city: response.data.city,
-      date: "Monday 10:00 AM",
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
@@ -44,7 +45,9 @@ export default function SearchEngine(props) {
         <h1>{weatherData.city}</h1>
         <div className="date-decscription text-capitalize">
           <ul>
-            <li>{weatherData.date}</li>
+            <li>
+              <FormattedDate date={weatherData.date} />
+            </li>
             <li>{weatherData.description}</li>
           </ul>
         </div>
