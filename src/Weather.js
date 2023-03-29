@@ -5,14 +5,16 @@ import "./Weather.css";
 export default function Weather(props) {
   return (
     <div className="Weather">
-      <h1>{props.data.city}</h1>
-      <div className="date-decscription text-capitalize">
-        <ul>
-          <li>
-            <FormattedDate date={props.data.date} />
-          </li>
-          <li>{props.data.description}</li>
-        </ul>
+      <div className="city-description-list">
+        <h1>{props.data.city}</h1>
+        <div className="date-decscription text-capitalize">
+          <ul>
+            <li>
+              <FormattedDate date={props.data.date} />
+            </li>
+            <li>{props.data.description}</li>
+          </ul>
+        </div>
       </div>
       <div className="row">
         <div className="col-6">
