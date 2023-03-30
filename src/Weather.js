@@ -24,7 +24,7 @@ export default function Weather(props) {
             src={props.data.iconUrl}
             alt={props.data.description}
           />
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature fahrenheit={props.data.temperature} />
         </div>
         <div className="col-6">
           <ul className="current-conditions">
