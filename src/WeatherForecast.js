@@ -4,7 +4,7 @@ export default function WeatherForecast(props) {
   return (
     <div className="WeatherForecast">
       <div className="row">
-        <div className="col">Mon icon 19 10</div>
+        <div className="col"></div>
       </div>
     </div>
   );
