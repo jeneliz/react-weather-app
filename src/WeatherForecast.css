@@ -1,0 +1,15 @@
+.WeatherForecast {
+  text-align: center;
+  display: none; /*REMOVE BEFORE EDITING WeatherForecast.js*/
+}
+.WeatherForecast-icon {
+  width: 75px;
+}
+
+.WeatherForecast-temperatures-max {
+  font-weight: bold;
+}
+
+.WeatherForecast-temperatures-min {
+  opacity: 0.5;
+}
