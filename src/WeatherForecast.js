@@ -8,9 +8,9 @@ export default function WeatherForecast(props) {
   }
 
   let apiKey = `d1oa3b4ebbef08c0aata4d20f47b2482`;
-  let latitude = props.coordinates.longitude;
-  let longitude = props.coordinates.latitude;
-  let unit = `imperial`;
+  let latitude = props.coordinates.latitude;
+  let longitude = props.coordinates.longitude;
+  let unit = "imperial";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${latitude}&lon=${longitude}&key=${apiKey}&units=${unit}`;
 
   axios.get(apiUrl).then(handleResponse);
@@ -24,8 +24,8 @@ export default function WeatherForecast(props) {
             {" "}
             <img
               className="WeatherForecast-icon text-capitalize"
-              src={props.icon}
-              alt={props.description}
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              alt="Icon"
             />
           </div>
           <div className="WeatherForecast-temperatures">
