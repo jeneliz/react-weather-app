@@ -1,6 +1,6 @@
 .WeatherForecast {
   text-align: center;
-  display: none; /*REMOVE BEFORE EDITING WeatherForecast.js*/
+  display: none;
 }
 .WeatherForecast-icon {
   width: 75px;
